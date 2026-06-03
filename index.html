@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejashwini B | Senior Salesforce Developer - Interactive Portfolio</title>
+  <meta name="description" content="Interactive portfolio of Tejashwini B, Senior Salesforce Developer with 8+ years of experience in Apex, LWC, Marketing Cloud, and Integrations. View resume in Modern or Salesforce Lightning Console mode.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@500;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Blur Elements -->
+  <div class="glow-bg bg-blue"></div>
+  <div class="glow-bg bg-purple"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-cloud"><i class="fa-solid fa-cloud"></i></span>
+      <span class="logo-text">TEJASHWINI<span>.B</span></span>
+    </div>
+    
+    <!-- Mode Switcher & Quick Actions -->
+    <div class="header-actions">
+      <div class="layout-toggle-container">
+        <span class="layout-label">View Mode:</span>
+        <div class="layout-toggle">
+          <button id="btn-modern-mode" class="toggle-btn active" title="Switch to Sleek Modern Layout">
+            <i class="fa-solid fa-user-tie"></i> <span>Modern</span>
+          </button>
+          <button id="btn-salesforce-mode" class="toggle-btn" title="Switch to Salesforce Lightning CRM Layout">
+            <i class="fa-solid fa-cloud-bolt"></i> <span>Lightning CRM</span>
+          </button>
+        </div>
+      </div>
+      
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <button id="btn-print" class="action-btn-primary" onclick="window.print()">
+        <i class="fa-solid fa-file-pdf"></i> Export PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN APP CONTAINER -->
+  <main id="main-content">
+    
+    <!-- ========================================== -->
+    <!-- VIEW A: MODERN DEVELOPER PROFILE           -->
+    <!-- ========================================== -->
+    <div id="modern-view" class="view-container active">
+      
+      <!-- HERO PANEL -->
+      <section class="hero-section">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Senior Salesforce Developer | 8+ Years Experience
+        </div>
+        <h1 class="hero-title">Tejashwini B</h1>
+        <div class="hero-subtitle">
+          Specializing in <span class="typewriter-text" id="typewriter">Apex, LWC, and Integrations</span>
+        </div>
+        <p class="hero-summary">
+          Senior Salesforce Developer with 8+ years of experience designing and developing scalable Salesforce solutions across Sales Cloud, Service Cloud, and Marketing Cloud. Expertise in Apex, Lightning Web Components (LWC), integrations, Flows, and enterprise-grade customizations.
+        </p>
+        
+        <!-- Contact & Quick Info -->
+        <div class="contact-strip">
+          <a href="mailto:btejashwini512@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>btejashwini512@gmail.com</span>
+          </a>
+          <a href="tel:+919611748512" class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 9611748512</span>
+          </a>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Bengaluru, India</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-circle-check text-green"></i>
+            <span>Open to Opportunities</span>
+          </div>
+        </div>
+        
+        <!-- Quick Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-num">8+</div>
+            <div class="stat-lbl">Years of Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2x</div>
+            <div class="stat-lbl">Salesforce Certified</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">Ranger</div>
+            <div class="stat-lbl">Trailhead Rank</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-lbl">Major Enterprise Clients</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS FILTER BAR -->
+      <section class="filter-section">
+        <h3 class="section-title-small">Filter by Tech Stack</h3>
+        <p class="filter-subtitle">Click a skill tag to highlight related professional experiences below.</p>
+        <div class="filter-tags">
+          <button class="filter-tag active" data-filter="all">Show All</button>
+          <button class="filter-tag" data-filter="apex">Apex</button>
+          <button class="filter-tag" data-filter="lwc">LWC</button>
+          <button class="filter-tag" data-filter="aura">Aura</button>
+          <button class="filter-tag" data-filter="flows">Flows</button>
+          <button class="filter-tag" data-filter="integration">REST/SOAP API</button>
+          <button class="filter-tag" data-filter="marketing-cloud">Marketing Cloud</button>
+          <button class="filter-tag" data-filter="devops">DevOps & CI/CD</button>
+        </div>
+      </section>
+
+      <!-- TWO COLUMN CONTENT -->
+      <div class="two-column-layout">
+        
+        <!-- COLUMN 1: EXPERIENCE & EDUCATION -->
+        <div class="main-column">
+          
+          <!-- PROFESSIONAL EXPERIENCE -->
+          <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-briefcase text-blue"></i> Professional Experience</h2>
+            
+            <div class="timeline">
+              <!-- E2open -->
+              <div class="timeline-item" data-skills="apex lwc flows devops">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <div class="role-title">Salesforce Developer</div>
+                  <div class="company-name">E2open</div>
+                  <div class="work-period">Jan 2023 – Present</div>
+                </div>
+                <div class="timeline-content">
+                  <ul>
+                    <li>Developed scalable <strong>Apex classes</strong>, <strong>triggers</strong>, <strong>Lightning Web Components (LWC)</strong>, and <strong>Flows</strong> following Salesforce best practices.</li>
+                    <li>Led technical feasibility discussions and collaborated with stakeholders to deliver enterprise Salesforce solutions.</li>
+                    <li>Built custom dashboards and reports to improve operational visibility and decision-making.</li>
+                    <li>Participated in deployment planning, <strong>DevOps Center</strong> adoption, org refreshes, and release management.</li>
+                    <li>Performed debugging, root cause analysis, and system optimization to improve platform reliability.</li>
+                  </ul>
+                  <div class="item-skills-used">
+                    <span class="skill-pill">Apex</span>
+                    <span class="skill-pill">LWC</span>
+                    <span class="skill-pill">Flows</span>
+                    <span class="skill-pill">DevOps Center</span>
+                    <span class="skill-pill">Agile</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dazeworks -->
+              <div class="timeline-item" data-skills="apex devops">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <div class="role-title">Application Engineer</div>
+                  <div class="company-name">Dazeworks</div>
+                  <div class="work-period">Dec 2021 – Jan 2023</div>
+                </div>
+                <div class="timeline-content">
+                  <ul>
+                    <li>Built and customized Salesforce applications for multiple clients in a consulting environment.</li>
+                    <li>Developed <strong>Apex classes</strong>, <strong>triggers</strong>, <strong>test classes</strong>, and maintained code coverage following best practices.</li>
+                    <li>Worked extensively on managed packages (<strong>NPSP</strong>) and complex org configurations.</li>
+                    <li>Supported <strong>integrations</strong>, deployments, and post-production enhancements.</li>
+                    <li>Prepared technical documentation and collaborated with cross-functional teams.</li>
+                  </ul>
+                  <div class="item-skills-used">
+                    <span class="skill-pill">Apex</span>
+                    <span class="skill-pill">NPSP</span>
+                    <span class="skill-pill">Integrations</span>
+                    <span class="skill-pill">Git</span>
+                    <span class="skill-pill">Consulting</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Lumen Technologies -->
+              <div class="timeline-item" data-skills="apex lwc aura marketing-cloud devops">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <div class="role-title">Software Development Engineer</div>
+                  <div class="company-name">Lumen Technologies</div>
+                  <div class="work-period">Jul 2020 – Dec 2021</div>
+                </div>
+                <div class="timeline-content">
+                  <ul>
+                    <li>Enhanced Salesforce functionality using <strong>Apex</strong>, <strong>LWC</strong>, and <strong>Aura Components</strong>.</li>
+                    <li>Worked on <strong>Marketing Cloud</strong> including Email Studio, Mobile Studio, and Journeys.</li>
+                    <li>Performed incident analysis, debugging, monitoring, and root cause analysis for production issues.</li>
+                    <li>Deployed code changes using <strong>GitLab</strong>, SourceTree, and multi-sandbox deployment strategies.</li>
+                  </ul>
+                  <div class="item-skills-used">
+                    <span class="skill-pill">Apex</span>
+                    <span class="skill-pill">LWC</span>
+                    <span class="skill-pill">Aura</span>
+                    <span class="skill-pill">Marketing Cloud</span>
+                    <span class="skill-pill">GitLab</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CRMIT Solutions -->
+              <div class="timeline-item" data-skills="apex aura flows">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <div class="role-title">CX Cloud Developer</div>
+                  <div class="company-name">CRMIT Solutions <span class="client-name">(Client: UnitedHealth Group)</span></div>
+                  <div class="work-period">Jun 2019 – Jul 2020</div>
+                </div>
+                <div class="timeline-content">
+                  <ul>
+                    <li>Configured security models, data visibility, automation, entitlements, and milestones.</li>
+                    <li>Developed <strong>Lightning (Aura) components</strong>, <strong>Apex controllers</strong>, <strong>triggers</strong>, and Visualforce pages.</li>
+                    <li>Designed reports and dashboards tailored for business and executive users.</li>
+                    <li>Supported data migration, deployment, and end-user enablement.</li>
+                  </ul>
+                  <div class="item-skills-used">
+                    <span class="skill-pill">Aura</span>
+                    <span class="skill-pill">Apex Controllers</span>
+                    <span class="skill-pill">Visualforce</span>
+                    <span class="skill-pill">Security Models</span>
+                    <span class="skill-pill">UnitedHealth Group</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accenture -->
+              <div class="timeline-item" data-skills="flows devops">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <div class="role-title">Application Development Associate</div>
+                  <div class="company-name">Accenture <span class="client-name">(Client: AT&T)</span></div>
+                  <div class="work-period">Dec 2017 – Jun 2019</div>
+                </div>
+                <div class="timeline-content">
+                  <ul>
+                    <li>Supported production Salesforce systems and resolved customer-reported issues.</li>
+                    <li>Implemented enhancements and automation changes (<strong>Flows</strong>, Validation Rules) in Salesforce applications.</li>
+                    <li>Automated testing using <strong>Robot Framework</strong> and participated in Agile delivery cycles.</li>
+                  </ul>
+                  <div class="item-skills-used">
+                    <span class="skill-pill">Salesforce Admin</span>
+                    <span class="skill-pill">Flows & Automations</span>
+                    <span class="skill-pill">Robot Framework</span>
+                    <span class="skill-pill">AT&T</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- EDUCATION -->
+          <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-graduation-cap text-blue"></i> Education</h2>
+            <div class="card education-card">
+              <div class="education-header">
+                <div>
+                  <h3 class="edu-degree">Bachelor of Engineering – Computer Science</h3>
+                  <div class="edu-school">Dayananda Sagar College of Engineering</div>
+                  <div class="edu-location">Bengaluru, India</div>
+                </div>
+                <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <!-- COLUMN 2: SKILLS, CERTIFICATIONS, TRAILHEAD -->
+        <div class="side-column">
+          
+          <!-- TECHNICAL SKILLS PROGRESS -->
+          <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-screwdriver-wrench text-blue"></i> Skills Breakdown</h2>
+            <div class="card skills-card">
+              
+              <div class="skill-category">
+                <h4 class="skill-cat-title">Salesforce Core</h4>
+                <div class="skill-progress-bar">
+                  <div class="skill-info"><span>Sales & Service Cloud</span><span>95%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-info"><span>Marketing Cloud</span><span>80%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="width: 80%"></div></div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4 class="skill-cat-title">Development</h4>
+                <div class="skill-progress-bar">
+                  <div class="skill-info"><span>Apex (Triggers, Classes)</span><span>95%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-info"><span>LWC (Lightning Web Components)</span><span>90%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-info"><span>Aura & Visualforce</span><span>85%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4 class="skill-cat-title">Configuration & API</h4>
+                <div class="skill-progress-bar">
+                  <div class="skill-info"><span>Flows & Process Automations</span><span>95%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-info"><span>REST & SOAP APIs / Integration</span><span>90%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-info"><span>SOQL & SOSL Databases</span><span>90%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="width: 90%"></div></div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4 class="skill-cat-title">DevOps & Methodology</h4>
+                <div class="skill-progress-bar">
+                  <div class="skill-info"><span>Git / GitLab / DevOps Center</span><span>85%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- CERTIFICATIONS & TRAILHEAD -->
+          <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-award text-blue"></i> Credentials</h2>
+            
+            <div class="trailhead-box card">
+              <div class="trailhead-header">
+                <div class="trailhead-badge-icon">
+                  <i class="fa-solid fa-mountain-sun"></i>
+                </div>
+                <div>
+                  <h4 class="trailhead-rank">Trailhead Ranger</h4>
+                  <p class="trailhead-desc">Salesforce Continuous Learning Milestone</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="certifications-list">
+              <div class="cert-item">
+                <div class="cert-icon"><i class="fa-solid fa-certificate text-gold"></i></div>
+                <div class="cert-details">
+                  <div class="cert-title">Salesforce Certified Platform Developer I</div>
+                  <div class="cert-org">Salesforce</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-icon"><i class="fa-solid fa-certificate text-gold"></i></div>
+                <div class="cert-details">
+                  <div class="cert-title">Salesforce Certified Administrator (ADM 201)</div>
+                  <div class="cert-org">Salesforce</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Superbadges -->
+            <div class="superbadges-section card">
+              <h4 class="superbadges-title">Trailhead Superbadges</h4>
+              <div class="badges-flex">
+                <div class="badge-card">
+                  <div class="badge-icon-mini"><i class="fa-solid fa-briefcase"></i></div>
+                  <span>Business Administration Specialist</span>
+                </div>
+                <div class="badge-card">
+                  <div class="badge-icon-mini"><i class="fa-solid fa-headset"></i></div>
+                  <span>Service Cloud Specialist</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW B: SALESFORCE LIGHTNING CONSOLE VIEW  -->
+    <!-- ========================================== -->
+    <div id="salesforce-view" class="view-container">
+      <div class="sf-console-layout">
+        
+        <!-- SIDE NAVIGATION -->
+        <aside class="sf-sidebar">
+          <div class="sf-nav-header">
+            <span class="sf-app-icon"><i class="fa-solid fa-cloud"></i></span>
+            <div class="sf-app-info">
+              <div class="sf-app-title">Salesforce Console</div>
+              <div class="sf-app-subtitle">Tejashwini B Profile</div>
+            </div>
+          </div>
+          
+          <nav class="sf-nav-list">
+            <button class="sf-nav-item active" data-tab="sf-home">
+              <i class="fa-solid fa-house"></i> <span>Console Home</span>
+            </button>
+            <button class="sf-nav-item" data-tab="sf-experience">
+              <i class="fa-solid fa-briefcase"></i> <span>Experiences (5)</span>
+            </button>
+            <button class="sf-nav-item" data-tab="sf-skills">
+              <i class="fa-solid fa-screwdriver-wrench"></i> <span>Skills & Database</span>
+            </button>
+            <button class="sf-nav-item" data-tab="sf-credentials">
+              <i class="fa-solid fa-award"></i> <span>Credentials & Ranger</span>
+            </button>
+            <button class="sf-nav-item" data-tab="sf-einstein">
+              <i class="fa-solid fa-robot"></i> <span>Einstein AI Chatbot</span>
+            </button>
+          </nav>
+        </aside>
+
+        <!-- MAIN SF CONSOLE DISPLAY -->
+        <div class="sf-main-window">
+          
+          <!-- TAB HEADER STRIP -->
+          <div class="sf-tab-bar">
+            <div class="sf-tab active" data-tab="sf-home">
+              <i class="fa-solid fa-house"></i> <span>Home Dashboard</span>
+            </div>
+            <div class="sf-tab" data-tab="sf-experience">
+              <i class="fa-solid fa-briefcase"></i> <span>Experiences</span>
+            </div>
+            <div class="sf-tab" data-tab="sf-skills">
+              <i class="fa-solid fa-screwdriver-wrench"></i> <span>Skills & Database</span>
+            </div>
+            <div class="sf-tab" data-tab="sf-credentials">
+              <i class="fa-solid fa-award"></i> <span>Credentials</span>
+            </div>
+            <div class="sf-tab" data-tab="sf-einstein">
+              <i class="fa-solid fa-robot"></i> <span>Einstein Chat</span>
+            </div>
+          </div>
+
+          <!-- WORKSPACE TABS CONTENT -->
+          <div class="sf-workspace">
+            
+            <!-- SUB-TAB A: SF HOME -->
+            <div class="sf-tab-content active" id="tab-sf-home">
+              
+              <!-- SF Header summary -->
+              <div class="sf-record-header">
+                <div class="sf-entity-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div class="sf-record-meta">
+                  <div class="sf-record-type">Lead Salesforce Developer</div>
+                  <h2 class="sf-record-name">Tejashwini B</h2>
+                  <div class="sf-fields-row">
+                    <div class="sf-field-col">
+                      <span class="sf-field-label">Status</span>
+                      <span class="sf-badge-success">Ready to Hire</span>
+                    </div>
+                    <div class="sf-field-col">
+                      <span class="sf-field-label">Current Role</span>
+                      <span class="sf-field-val">Salesforce Developer @ E2open</span>
+                    </div>
+                    <div class="sf-field-col">
+                      <span class="sf-field-label">Phone</span>
+                      <span class="sf-field-val">+91 9611748512</span>
+                    </div>
+                    <div class="sf-field-col">
+                      <span class="sf-field-label">Email</span>
+                      <span class="sf-field-val"><a href="mailto:btejashwini512@gmail.com">btejashwini512@gmail.com</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Salesforce Layout Dashboard widgets -->
+              <div class="sf-dashboard-grid">
+                
+                <!-- Performance card -->
+                <div class="sf-dash-card">
+                  <h3 class="sf-dash-card-title">Professional Summary</h3>
+                  <div class="sf-dash-card-content">
+                    <p class="summary-paragraph">
+                      Senior Salesforce Developer with <strong>8+ years of experience</strong> designing and developing scalable Salesforce solutions across Sales Cloud, Service Cloud, and Marketing Cloud. Expertise in Apex, Lightning Web Components (LWC), integrations, Flows, and enterprise-grade customizations. Strong experience in debugging, performance optimization, deployment management, stakeholder collaboration, and Agile delivery.
+                    </p>
+                    <div class="sf-dashboard-highlights">
+                      <div class="highlight-stat-item">
+                        <span class="num">8+</span>
+                        <span class="lbl">Years Exp</span>
+                      </div>
+                      <div class="highlight-stat-item">
+                        <span class="num">100%</span>
+                        <span class="lbl">Agile Delivery</span>
+                      </div>
+                      <div class="highlight-stat-item">
+                        <span class="num">24/7</span>
+                        <span class="lbl">Prod Support</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Einstein insights -->
+                <div class="sf-dash-card sf-highlight-card">
+                  <h3 class="sf-dash-card-title"><i class="fa-solid fa-wand-magic-sparkles text-gold"></i> Einstein Candidate Insights</h3>
+                  <div class="sf-dash-card-content">
+                    <ul class="einstein-insights-list">
+                      <li>
+                        <i class="fa-solid fa-arrow-trend-up text-green"></i>
+                        <div><strong>LWC Migration Specialist:</strong> Transitioned multiple legacy Aura and Visualforce components into modern high-performance LWC structures.</div>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-arrow-trend-up text-green"></i>
+                        <div><strong>DevOps Champion:</strong> Early adopter of Salesforce DevOps Center, leading org refresh structures and reducing release cycles.</div>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-arrow-trend-up text-green"></i>
+                        <div><strong>Cross-Cloud Capability:</strong> Competent across Sales, Service, and Marketing Cloud (Email Studio, Mobile Studio, Journeys).</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact & Details Block -->
+              <div class="sf-dash-card" style="margin-top: 20px;">
+                <h3 class="sf-dash-card-title">Record Details</h3>
+                <div class="sf-details-table">
+                  <div class="sf-details-row">
+                    <div class="sf-details-label">Address / Location</div>
+                    <div class="sf-details-value">Bengaluru, Karnataka, India</div>
+                    <div class="sf-details-label">Education</div>
+                    <div class="sf-details-value">BE Computer Science (Dayananda Sagar College of Engineering)</div>
+                  </div>
+                  <div class="sf-details-row">
+                    <div class="sf-details-label">Certifications</div>
+                    <div class="sf-details-value">Platform Developer I, Certified Administrator</div>
+                    <div class="sf-details-label">Learning Rank</div>
+                    <div class="sf-details-value">Trailhead Ranger</div>
+                  </div>
+                  <div class="sf-details-row">
+                    <div class="sf-details-label">Git / Version Control</div>
+                    <div class="sf-details-value">GitLab, Git, SourceTree</div>
+                    <div class="sf-details-label">Methodology</div>
+                    <div class="sf-details-value">Agile, Scrum, CI/CD</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- SUB-TAB B: SF EXPERIENCE -->
+            <div class="sf-tab-content" id="tab-sf-experience">
+              <div class="sf-record-header">
+                <div class="sf-entity-avatar"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="sf-record-meta">
+                  <div class="sf-record-type">Object</div>
+                  <h2 class="sf-record-name">Experiences Related List</h2>
+                  <p>Displaying all professional records (5 items found)</p>
+                </div>
+              </div>
+              
+              <!-- Salesforce Table of Experience -->
+              <div class="sf-table-wrapper">
+                <table class="sf-data-table">
+                  <thead>
+                    <tr>
+                      <th>Job Title</th>
+                      <th>Company</th>
+                      <th>Work Period</th>
+                      <th>Key Focus</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Salesforce Developer</strong></td>
+                      <td>E2open</td>
+                      <td>Jan 2023 – Present</td>
+                      <td><span class="sf-badge">Apex</span> <span class="sf-badge">LWC</span> <span class="sf-badge">DevOps Center</span></td>
+                      <td><button class="sf-action-btn-small" onclick="viewSfExperienceDetails('E2open')">View Details</button></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Application Engineer</strong></td>
+                      <td>Dazeworks</td>
+                      <td>Dec 2021 – Jan 2023</td>
+                      <td><span class="sf-badge">Managed Packages</span> <span class="sf-badge">Apex Classes</span> <span class="sf-badge">NPSP</span></td>
+                      <td><button class="sf-action-btn-small" onclick="viewSfExperienceDetails('Dazeworks')">View Details</button></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Software Development Engineer</strong></td>
+                      <td>Lumen Technologies</td>
+                      <td>Jul 2020 – Dec 2021</td>
+                      <td><span class="sf-badge">Marketing Cloud</span> <span class="sf-badge">Aura Components</span> <span class="sf-badge">GitLab</span></td>
+                      <td><button class="sf-action-btn-small" onclick="viewSfExperienceDetails('Lumen')">View Details</button></td>
+                    </tr>
+                    <tr>
+                      <td><strong>CX Cloud Developer</strong></td>
+                      <td>CRMIT Solutions (Client: UnitedHealth Group)</td>
+                      <td>Jun 2019 – Jul 2020</td>
+                      <td><span class="sf-badge">Security Models</span> <span class="sf-badge">Entitlements</span> <span class="sf-badge">Triggers</span></td>
+                      <td><button class="sf-action-btn-small" onclick="viewSfExperienceDetails('CRMIT')">View Details</button></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Application Development Associate</strong></td>
+                      <td>Accenture (Client: AT&T)</td>
+                      <td>Dec 2017 – Jun 2019</td>
+                      <td><span class="sf-badge">Flows</span> <span class="sf-badge">Robot Framework</span> <span class="sf-badge">Agile Delivery</span></td>
+                      <td><button class="sf-action-btn-small" onclick="viewSfExperienceDetails('Accenture')">View Details</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Salesforce Dynamic Record Details Sidebar / Modal -->
+              <div id="sf-experience-details-box" class="sf-details-drawer">
+                <div class="sf-drawer-header">
+                  <h3 id="sf-drawer-company-title">Experience Detail Page</h3>
+                  <button onclick="closeSfDrawer()" class="sf-close-btn">&times;</button>
+                </div>
+                <div class="sf-drawer-body" id="sf-drawer-content">
+                  <p class="text-muted">Click "View Details" on any record row above to open the full technical log.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- SUB-TAB C: SF SKILLS -->
+            <div class="sf-tab-content" id="tab-sf-skills">
+              <div class="sf-record-header">
+                <div class="sf-entity-avatar"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <div class="sf-record-meta">
+                  <div class="sf-record-type">Object</div>
+                  <h2 class="sf-record-name">Skills &amp; Technology Stack</h2>
+                  <p>Comprehensive categorisation of Salesforce and Software Engineering expertise</p>
+                </div>
+              </div>
+
+              <div class="sf-skills-grid">
+                
+                <div class="sf-dash-card">
+                  <h3 class="sf-dash-card-title">Development &amp; Databases</h3>
+                  <div class="sf-grid-fields">
+                    <div class="sf-grid-field-row">
+                      <div class="sf-grid-field-lbl">Apex / Visualforce</div>
+                      <div class="sf-grid-field-val">Advanced (8+ years experience, triggers, controllers, async, queueable, batch)</div>
+                    </div>
+                    <div class="sf-grid-field-row">
+                      <div class="sf-grid-field-lbl">LWC &amp; Aura</div>
+                      <div class="sf-grid-field-val">Highly Experienced (Building, upgrading, and custom UI designing)</div>
+                    </div>
+                    <div class="sf-grid-field-row">
+                      <div class="sf-grid-field-lbl">SOQL &amp; SOSL</div>
+                      <div class="sf-grid-field-val">Database queries, optimizations, indexes, governor limit management</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sf-dash-card">
+                  <h3 class="sf-dash-card-title">Automations &amp; Integrations</h3>
+                  <div class="sf-grid-fields">
+                    <div class="sf-grid-field-row">
+                      <div class="sf-grid-field-lbl">REST &amp; SOAP Web Services</div>
+                      <div class="sf-grid-field-val">Integrating Salesforce with external ERPs, payment gateways, and databases</div>
+                    </div>
+                    <div class="sf-grid-field-row">
+                      <div class="sf-grid-field-lbl">Salesforce Flows</div>
+                      <div class="sf-grid-field-val">Screen Flows, Autolaunched, Record-Triggered Flows, sub-flows</div>
+                    </div>
+                    <div class="sf-grid-field-row">
+                      <div class="sf-grid-field-lbl">Platform Events</div>
+                      <div class="sf-grid-field-val">Asynchronous event-driven architecture integrations</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sf-dash-card">
+                  <h3 class="sf-dash-card-title">Marketing Cloud &amp; DevOps</h3>
+                  <div class="sf-grid-fields">
+                    <div class="sf-grid-field-row">
+                      <div class="sf-grid-field-lbl">Marketing Cloud</div>
+                      <div class="sf-grid-field-val">Email Studio, Mobile Studio, Journey Builder integrations</div>
+                    </div>
+                    <div class="sf-grid-field-row">
+                      <div class="sf-grid-field-lbl">Version Control</div>
+                      <div class="sf-grid-field-val">Git, GitLab pipelines, SourceTree branching models</div>
+                    </div>
+                    <div class="sf-grid-field-row">
+                      <div class="sf-grid-field-lbl">Deployment Tools</div>
+                      <div class="sf-grid-field-val">DevOps Center, Change Sets, Ant migration tool</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- SUB-TAB D: SF CREDENTIALS -->
+            <div class="sf-tab-content" id="tab-sf-credentials">
+              <div class="sf-record-header">
+                <div class="sf-entity-avatar"><i class="fa-solid fa-award"></i></div>
+                <div class="sf-record-meta">
+                  <div class="sf-record-type">Object</div>
+                  <h2 class="sf-record-name">Certifications &amp; Ranger Badges</h2>
+                  <p>Official Salesforce Credentials &amp; Superbadges</p>
+                </div>
+              </div>
+
+              <div class="sf-credentials-grid">
+                
+                <!-- Certification Cards -->
+                <div class="sf-cert-card">
+                  <div class="sf-cert-badge-logo"><i class="fa-solid fa-shield-halved text-blue"></i></div>
+                  <div class="sf-cert-card-info">
+                    <h4>Salesforce Certified Administrator</h4>
+                    <p>Credential Status: Active</p>
+                    <span class="sf-badge">ADM 201</span>
+                  </div>
+                </div>
+
+                <div class="sf-cert-card">
+                  <div class="sf-cert-badge-logo"><i class="fa-solid fa-code text-blue"></i></div>
+                  <div class="sf-cert-card-info">
+                    <h4>Salesforce Certified Platform Developer I</h4>
+                    <p>Credential Status: Active</p>
+                    <span class="sf-badge">PD1</span>
+                  </div>
+                </div>
+
+                <!-- Trailhead card -->
+                <div class="sf-cert-card sf-trailhead-ranger-card">
+                  <div class="sf-cert-badge-logo ranger-color"><i class="fa-solid fa-mountain-sun"></i></div>
+                  <div class="sf-cert-card-info">
+                    <h4>Trailhead Ranger</h4>
+                    <p>Superbadges Earned:</p>
+                    <ul>
+                      <li>Business Administration Specialist</li>
+                      <li>Service Cloud Specialist</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- SUB-TAB E: SF EINSTEIN CHATBOT -->
+            <div class="sf-tab-content" id="tab-sf-einstein">
+              <div class="sf-record-header">
+                <div class="sf-entity-avatar"><i class="fa-solid fa-robot"></i></div>
+                <div class="sf-record-meta">
+                  <div class="sf-record-type">Salesforce Agent</div>
+                  <h2 class="sf-record-name">Einstein AI Assistant</h2>
+                  <p>Ask Einstein questions about Tejashwini B's resume and technical background</p>
+                </div>
+              </div>
+
+              <div class="sf-chat-console-box">
+                <div class="sf-chat-messages" id="sf-console-chat-messages">
+                  <div class="sf-chat-msg system">
+                    <div class="msg-bubble">
+                      🤖 <strong>Einstein AI:</strong> Hello! I am Einstein. I am trained on Tejashwini's professional background. Select one of the quick questions below to analyze her credentials!
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="sf-chat-quick-questions">
+                  <button class="sf-quick-btn" onclick="askEinstein('summary')">Tell me about her experience</button>
+                  <button class="sf-quick-btn" onclick="askEinstein('lwc')">Does she know LWC &amp; Apex?</button>
+                  <button class="sf-quick-btn" onclick="askEinstein('integrations')">How is her API/Integration experience?</button>
+                  <button class="sf-quick-btn" onclick="askEinstein('certifications')">What certifications does she hold?</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FLOATING EINSTEIN CHAT WIDGET (For Modern Mode) -->
+  <div class="floating-chat-widget" id="einstein-chat-widget">
+    <button class="chat-trigger-btn" id="chat-trigger" title="Ask Einstein about Tejashwini">
+      <i class="fa-solid fa-robot"></i>
+      <span class="chat-pulse"></span>
+    </button>
+    
+    <div class="chat-window" id="chat-window">
+      <div class="chat-header">
+        <div class="chat-avatar"><i class="fa-solid fa-robot"></i></div>
+        <div class="chat-title-container">
+          <div class="chat-title">Einstein AI Assistant</div>
+          <div class="chat-status">Powered by Salesforce Data</div>
+        </div>
+        <button class="chat-close" id="chat-close">&times;</button>
+      </div>
+      
+      <div class="chat-body" id="chat-body">
+        <div class="chat-msg bot">
+          Hello! I can answer questions about Tejashwini B's experience. Click a question below:
+        </div>
+      </div>
+      
+      <div class="chat-suggestions">
+        <button class="suggest-btn" data-query="summary">Quick Summary</button>
+        <button class="suggest-btn" data-query="lwc">LWC & Apex Details</button>
+        <button class="suggest-btn" data-query="integrations">Integrations & APIs</button>
+        <button class="suggest-btn" data-query="contact">Contact Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRINT ONLY STATIC VERSION (Optimized for 2-page print output) -->
+  <div id="print-version" class="print-only">
+    <div class="print-header">
+      <h1>TEJASHWINI B</h1>
+      <div class="print-subtitle">Senior Salesforce Developer</div>
+      <div class="print-contact">
+        <span>Bengaluru, India</span> | 
+        <span>+91 9611748512</span> | 
+        <span>btejashwini512@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">PROFESSIONAL SUMMARY</h2>
+      <p>Senior Salesforce Developer with 8+ years of experience designing and developing scalable Salesforce solutions across Sales Cloud, Service Cloud, and Marketing Cloud. Expertise in Apex, Lightning Web Components (LWC), integrations, Flows, and enterprise-grade customizations. Strong experience in debugging, performance optimization, deployment management, stakeholder collaboration, and Agile delivery.</p>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">TECHNICAL SKILLS</h2>
+      <ul class="print-skills-list">
+        <li><strong>Salesforce:</strong> Sales Cloud, Service Cloud, Marketing Cloud</li>
+        <li><strong>Development:</strong> Apex, Lightning Web Components (LWC), Aura, Visualforce</li>
+        <li><strong>Automation:</strong> Flows, Process Builder, Validation Rules</li>
+        <li><strong>Integration:</strong> REST API, SOAP API, Platform Events</li>
+        <li><strong>Database:</strong> SOQL, SOSL</li>
+        <li><strong>DevOps & Tools:</strong> GitLab, Git, DevOps Center, VS Code, SourceTree</li>
+        <li><strong>Methodologies:</strong> Agile, Scrum, CI/CD</li>
+      </ul>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">PROFESSIONAL EXPERIENCE</h2>
+      
+      <div class="print-job">
+        <div class="print-job-header">
+          <strong>Salesforce Developer</strong> | E2open
+          <span class="print-job-date">Jan 2023 – Present</span>
+        </div>
+        <ul>
+          <li>Developed scalable Apex classes, triggers, Lightning Web Components (LWC), and Flows following Salesforce best practices.</li>
+          <li>Led technical feasibility discussions and collaborated with stakeholders to deliver enterprise Salesforce solutions.</li>
+          <li>Built custom dashboards and reports to improve operational visibility and decision-making.</li>
+          <li>Participated in deployment planning, DevOps Center adoption, org refreshes, and release management.</li>
+          <li>Performed debugging, root cause analysis, and system optimization to improve platform reliability.</li>
+        </ul>
+      </div>
+
+      <div class="print-job">
+        <div class="print-job-header">
+          <strong>Application Engineer</strong> | Dazeworks
+          <span class="print-job-date">Dec 2021 – Jan 2023</span>
+        </div>
+        <ul>
+          <li>Built and customized Salesforce applications for multiple clients in a consulting environment.</li>
+          <li>Developed Apex classes, triggers, test classes, and maintained code coverage following best practices.</li>
+          <li>Worked extensively on managed packages (NPSP) and complex org configurations.</li>
+          <li>Supported integrations, deployments, and post-production enhancements.</li>
+          <li>Prepared technical documentation and collaborated with cross-functional teams.</li>
+        </ul>
+      </div>
+
+      <div class="print-job">
+        <div class="print-job-header">
+          <strong>Software Development Engineer</strong> | Lumen Technologies
+          <span class="print-job-date">Jul 2020 – Dec 2021</span>
+        </div>
+        <ul>
+          <li>Enhanced Salesforce functionality using Apex, LWC, and Aura Components.</li>
+          <li>Worked on Marketing Cloud including Email Studio, Mobile Studio, and Journeys.</li>
+          <li>Performed incident analysis, debugging, monitoring, and root cause analysis for production issues.</li>
+          <li>Deployed code changes using GitLab, SourceTree, and multi-sandbox deployment strategies.</li>
+        </ul>
+      </div>
+
+      <div class="print-job">
+        <div class="print-job-header">
+          <strong>CX Cloud Developer</strong> | CRMIT Solutions (Client: UnitedHealth Group)
+          <span class="print-job-date">Jun 2019 – Jul 2020</span>
+        </div>
+        <ul>
+          <li>Configured security models, data visibility, automation, entitlements, and milestones.</li>
+          <li>Developed Lightning (Aura) components, Apex controllers, triggers, and Visualforce pages.</li>
+          <li>Designed reports and dashboards tailored for business and executive users.</li>
+          <li>Supported data migration, deployment, and end-user enablement.</li>
+        </ul>
+      </div>
+
+      <div class="print-job">
+        <div class="print-job-header">
+          <strong>Application Development Associate</strong> | Accenture (Client: AT&T)
+          <span class="print-job-date">Dec 2017 – Jun 2019</span>
+        </div>
+        <ul>
+          <li>Supported production Salesforce systems and resolved customer-reported issues.</li>
+          <li>Implemented enhancements and automation changes in Salesforce applications.</li>
+          <li>Automated testing using Robot Framework and participated in Agile delivery cycles.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">EDUCATION</h2>
+      <p><strong>Bachelor of Engineering – Computer Science</strong> | Dayananda Sagar College of Engineering, Bengaluru</p>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">CERTIFICATIONS</h2>
+      <ul>
+        <li>Salesforce Certified Administrator (ADM 201)</li>
+        <li>Salesforce Certified Platform Developer I</li>
+        <li>Trailhead Ranger</li>
+        <li>Salesforce Superbadges: Business Administration Specialist, Service Cloud Specialist</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
